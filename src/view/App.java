@@ -51,11 +51,11 @@ public class App extends Application {
 
     public void initialize(){
         System.out.println("init");
+        Room room101 = new Room("101");
+        Room room102 = new Room("102");
+        Room room103 = new Room("103");
         Room room104 = new Room("104");
-        Room room201 = new Room("201");
-        Room room202 = new Room("202");
-        Room room203 = new Room("203");
-        RoomData.addAll(room104,room201,room202,room203);
+        RoomData.addAll(room101,room102,room103,room104);
 
         StudentsGroup firstYear = new StudentsGroup("First Year");
         StudentsGroup secondYear = new StudentsGroup("Second Year");
@@ -63,26 +63,23 @@ public class App extends Application {
         StudentsGroup fourthYear = new StudentsGroup("Fourth Year");
         GroupData.addAll(firstYear,secondYear,thirdYear,fourthYear);
 
-        Course firstMPx14 = new Course("Mathematics 4","MPx14");
-        Course firstCS111 = new Course("Probability","CS111");
-        Course firstCS122 = new Course("Data Structures 1","CS122");
-        Course firstCS131 = new Course("Computer Fundamentals","CS131");
-        Course firstEEx11 = new Course("Electric Circuits","EEx11");
-        Course firstHS172 = new Course("Computer and Society","HS172");
-        CourseData.addAll(firstMPx14,firstCS111,firstCS122,firstCS131,firstEEx11,firstHS172);
+        Course firstMPx14 = new Course("CC","351B");
+        Course firstCS111 = new Course("CD","341B");
+        Course firstCS122 = new Course("OOAD","352B");
+        Course firstCS131 = new Course("ELECTIVE-1","E1");
+        Course firstEEx11 = new Course("ELECTIVE_2","E2");
+        CourseData.addAll(firstMPx14,firstCS111,firstCS122,firstCS131,firstEEx11);
 
-        Instructor DrMervat = new Instructor("Dr Mervat");
-        Instructor DrE3tdal = new Instructor("Dr E3tdal");
-        Instructor DrSoheir = new Instructor("Dr Soheir");
-        Instructor DrKhaled = new Instructor("Dr Khaled");
-        Instructor DrNazeih = new Instructor("Dr Nazeih");
-        Instructor DrHassan = new Instructor("Dr Hassan");
-        Instructor DrAmal = new Instructor("Dr Amal");
-        InstructorData.addAll(DrMervat,DrE3tdal,DrSoheir,DrKhaled,DrNazeih,DrHassan,DrAmal);
+        Instructor A = new Instructor("A");
+        Instructor B = new Instructor("B");
+        Instructor C = new Instructor("C");
+        Instructor D = new Instructor("D");
+        Instructor E = new Instructor("E");
+        InstructorData.addAll(A,B,C,D,E);
 
-        Class digitalLec1 = new Class(firstCS131,"Lec",DrNazeih,firstYear,room104);
-        Class societyLec = new Class(firstHS172,"Lec",DrAmal,firstYear,room104);
-        Class DSLec1 = new Class(firstCS122,"Lec",DrKhaled,firstYear,room104);
+        Class digitalLec1 = new Class(firstCS131,"Lec",A,firstYear,room104);
+        Class societyLec = new Class(firstHS172,"Lec",B,firstYear,room104);
+        Class DSLec1 = new Class(firstCS122,"Lec",C,firstYear,room104);
         Class probLec1 = new Class(firstCS111,"Lec",DrSoheir,firstYear,room104);
         Class mathLec1 = new Class(firstMPx14,"Lec",DrMervat,firstYear,room104);
         Class EELec1 = new Class(firstEEx11,"Lec",DrHassan,firstYear,room104);
