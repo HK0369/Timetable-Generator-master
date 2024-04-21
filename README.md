@@ -3,7 +3,7 @@
 
 > An automated time table generator using genetic algorithms in Java with JavaFX application using MVC architecture pattern.
 
-![alt logo](https://www.google.com/imgres?q=http%20pesu%20images&imgurl=https%3A%2F%2Fwww.pesuacademy.com%2FAcademy%2Fimages%2Fpesuimages%2FlogoPesu.png&imgrefurl=https%3A%2F%2Fwww.pesuacademy.com%2F&docid=F0p3qxa-fasK9M&tbnid=HJac49qF43O4gM&vet=12ahUKEwi32uuPmtOFAxW04jgGHSB9CsUQM3oECHYQAA..i&w=400&h=193&hcb=2&ved=2ahUKEwi32uuPmtOFAxW04jgGHSB9CsUQM3oECHYQAA)
+![alt logo]![image](https://github.com/HK0369/Timetable-Generator-master/assets/154605397/1452507e-77e2-4cc0-acea-7558a6d45d93)
 
 ## Introduction
 The timetabling problems are essentially the problems that deal with effective distribution of resources. 
@@ -23,6 +23,9 @@ Integration: Seamless integration with existing systems ensures smooth data exch
 Methods Used: It leverages MVC Architecture, and robust database management,Genetic Algorithm.
 
 Conclusion: The "Timetable Generator" enhances efficiency and productivity by streamlining scheduling processes for educational institutions and organizations.
+
+HOME PAGE: ![image](https://github.com/HK0369/Timetable-Generator-master/assets/154605397/4332003e-ee46-4f99-853c-39dca9beb428)
+
 
 
 
