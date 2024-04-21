@@ -66,7 +66,6 @@ public class ClassesController implements Initializable {
 
         newClassGroup.setItems(PaneNavigator.getMainApp().getGroupData());
         newClassType.getItems().add("Lecture");
-        newClassType.getItems().add("Section");
         newClassType.getItems().add("Lab");
         newClassCourse.setItems(PaneNavigator.getMainApp().getCourseData());
         newClassInstructor.setItems(PaneNavigator.getMainApp().getInstrutorData());

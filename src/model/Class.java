@@ -61,7 +61,7 @@ public class Class {
 
             str =  getID() + "_" + studentGroup.toString() + "_" + course.getCode() + "_ " + course.getName();
         }catch (NullPointerException e){
-            str= "Empty";
+            str= "CONFLICT ISSUE";
         }
         return str;
 

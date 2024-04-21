@@ -53,9 +53,7 @@ public class App extends Application {
         System.out.println("init");
         Room room101 = new Room("101");
         Room room102 = new Room("102");
-        Room room103 = new Room("103");
-        Room room104 = new Room("104");
-        RoomData.addAll(room101,room102,room103,room104);
+        RoomData.addAll(room101,room102);
 
         StudentsGroup firstYear = new StudentsGroup("First Year");
         StudentsGroup secondYear = new StudentsGroup("Second Year");
@@ -63,47 +61,45 @@ public class App extends Application {
         StudentsGroup fourthYear = new StudentsGroup("Fourth Year");
         GroupData.addAll(firstYear,secondYear,thirdYear,fourthYear);
 
-        Course firstMPx14 = new Course("CC","351B");
-        Course firstCS111 = new Course("CD","341B");
-        Course firstCS122 = new Course("OOAD","352B");
-        Course firstCS131 = new Course("ELECTIVE-1","E1");
-        Course firstEEx11 = new Course("ELECTIVE_2","E2");
-        CourseData.addAll(firstMPx14,firstCS111,firstCS122,firstCS131,firstEEx11);
+        Course first351B = new Course("CC","351B");
+        Course first352B = new Course("OOADJ","352B");
+        Course first341B = new Course("CD","341B");
+        Course first342AB4 = new Course("ROBOTICS","342AB4");
+        Course first342AB7 = new Course("BC","342AB7");
+        Course first242AB1 = new Course("AC","242AB1");
+        Course first242AB2= new Course("CA","242AB2");
+        Course first242AB3 = new Course("KM","242AB3");
+        Course first242AB4 = new Course("LK","242AB4");
+        Course first242AB5 = new Course("HN","242AB5");
 
-        Instructor A = new Instructor("A");
-        Instructor B = new Instructor("B");
-        Instructor C = new Instructor("C");
-        Instructor D = new Instructor("D");
-        Instructor E = new Instructor("E");
-        InstructorData.addAll(A,B,C,D,E);
+        CourseData.addAll(first351B,first352B,first341B,first342AB4,first342AB7,first242AB1,first242AB2,first242AB3,first242AB4,first242AB5);
 
-        Class digitalLec1 = new Class(firstCS131,"Lec",A,firstYear,room104);
-        Class societyLec = new Class(firstHS172,"Lec",B,firstYear,room104);
-        Class DSLec1 = new Class(firstCS122,"Lec",C,firstYear,room104);
-        Class probLec1 = new Class(firstCS111,"Lec",DrSoheir,firstYear,room104);
-        Class mathLec1 = new Class(firstMPx14,"Lec",DrMervat,firstYear,room104);
-        Class EELec1 = new Class(firstEEx11,"Lec",DrHassan,firstYear,room104);
-        Class digitalLec2 = new Class(firstCS131,"Lec",DrNazeih,firstYear,room104);
-        Class probLec2 = new Class(firstCS111,"Lec",DrSoheir,firstYear,room104);
-        Class mathLec2 = new Class(firstMPx14,"Lec",DrE3tdal,firstYear,room104);
-        Class DSLec2 = new Class(firstCS122,"Lec",DrKhaled,firstYear,room104);
-        Class EELec2 = new Class(firstEEx11,"Lec",DrHassan,firstYear,room104);
+        Instructor PROF_SHRUTHI = new Instructor("PROF_SHRUTHI");
+        Instructor PROF_VINAY_JOSHI = new Instructor("PROF_VINAY_JOSHI");
+        Instructor PROF_POONAM_KUMARI = new Instructor("PROF_POONAM_KUMARI");
+        Instructor PROF_ASHOK = new Instructor("PROF_ASHOK");
+        Instructor PROF_SHRUTI= new Instructor("PROF_SHRUTI");
+        Instructor PROF_AMS= new Instructor("PROF_AMS");
+        Instructor PROF_KSS= new Instructor("PROF_KSS");
+        Instructor PROF_ABS= new Instructor("PROF_ABS");
+        Instructor PROF_CBJ= new Instructor("PROF_CBJ");
+        Instructor PROF_MK= new Instructor("PROF_MK");
 
-        Class digitalLec11 = new Class(firstCS131,"Lec",DrNazeih,secondYear,room201);
-        Class societyLec1 = new Class(firstHS172,"Lec",DrAmal,secondYear,room201);
-        Class DSLec11 = new Class(firstCS122,"Lec",DrKhaled,secondYear,room201);
-        Class probLec11 = new Class(firstCS111,"Lec",DrSoheir,secondYear,room201);
-        Class mathLec11 = new Class(firstMPx14,"Lec",DrMervat,secondYear,room201);
-        Class EELec11 = new Class(firstEEx11,"Lec",DrHassan,secondYear,room201);
-        Class digitalLec21 = new Class(firstCS131,"Lec",DrNazeih,secondYear,room201);
-        Class probLec21 = new Class(firstCS111,"Lec",DrSoheir,secondYear,room201);
-        Class mathLec21 = new Class(firstMPx14,"Lec",DrE3tdal,secondYear,room201);
-        Class DSLec21 = new Class(firstCS122,"Lec",DrKhaled,secondYear,room201);
-        Class EELec21 = new Class(firstEEx11,"Lec",DrHassan,secondYear,room201);
+        InstructorData.addAll(PROF_SHRUTHI,PROF_VINAY_JOSHI,PROF_POONAM_KUMARI,PROF_ASHOK,PROF_SHRUTI,PROF_MK,PROF_KSS,PROF_CBJ,PROF_AMS,PROF_ABS);
 
-        ClassData.addAll(digitalLec1,societyLec,DSLec1,probLec1,mathLec1,EELec1,digitalLec2,probLec2,
-                mathLec2,DSLec2,EELec2,digitalLec11,societyLec1,DSLec11,probLec11,mathLec11,EELec11,
-                digitalLec21,probLec21,mathLec21,DSLec21,EELec21);
+        Class CC = new Class(first351B,"Lec",PROF_SHRUTHI,firstYear,room101);
+        Class OOADJ = new Class(first352B,"Lec",PROF_VINAY_JOSHI,firstYear,room101);
+        Class CD = new Class(first341B,"Lec",PROF_POONAM_KUMARI,firstYear,room101);
+        Class ROBOTICS = new Class(first342AB4,"Lec",PROF_ASHOK,firstYear,room101);
+        Class BC = new Class(first342AB7,"Lec",PROF_SHRUTI,firstYear,room101);
+
+        Class AC = new Class(first242AB1,"Lec",PROF_AMS,secondYear,room102);
+        Class CA = new Class(first242AB2,"Lec",PROF_KSS,secondYear,room102);
+        Class KM = new Class(first242AB3,"Lec",PROF_ABS,secondYear,room102);
+        Class LK = new Class(first242AB4,"Lec",PROF_CBJ,firstYear,room102);
+        Class HN = new Class(first242AB5,"Lec",PROF_MK,firstYear,room102);
+
+        ClassData.addAll(CC,OOADJ,CD,ROBOTICS,BC);
 
         workingDays.put("saturday",true);
         workingDays.put("sunday",true);

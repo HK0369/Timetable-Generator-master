@@ -18,7 +18,7 @@
    <children>
       <AnchorPane prefHeight="200.0" prefWidth="200.0">
          <children>
-            <Label id="about" prefHeight="325.0" prefWidth="580.0" text="An automated time table generator using genetic algorithms.  Timetabling is the task of creating a timetable while satisfying some constraints. Timetabling problem is common to all educational institutions." textAlignment="JUSTIFY" wrapText="true" AnchorPane.bottomAnchor="55.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <Label id="about" prefHeight="325.0" prefWidth="580.0" text="Timetable generator for college using MVC Architecture Effortlessly manage your college schedules...." textAlignment="JUSTIFY" wrapText="true" AnchorPane.bottomAnchor="55.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                <font>
                   <Font size="15.0" />
                </font></Label>

@@ -18,12 +18,12 @@
     <children>
         <AnchorPane prefHeight="200.0" prefWidth="200.0">
             <children>
-                <TableView fx:id="generatedTable" layoutX="17.0" layoutY="14.0" prefHeight="350.0" prefWidth="543.0" AnchorPane.bottomAnchor="16.0" AnchorPane.leftAnchor="17.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="14.0">
+                <TableView fx:id="generatedTable" layoutX="17.0" layoutY="14.0" prefHeight="450.0" prefWidth="700.0" AnchorPane.bottomAnchor="16.0" AnchorPane.leftAnchor="17.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="14.0">
                     <columns>
                         <TableColumn fx:id="tableDayCol" prefWidth="66.0" text="Day" />
-                  <TableColumn fx:id="tableRoomCol" prefWidth="102.0" text="Room" />
-                  <TableColumn fx:id="tablePeriodCol" prefWidth="73.0" text="Period" />
-                  <TableColumn fx:id="tableClassCol" prefWidth="301.0" text="Class" />
+                        <TableColumn fx:id="tableRoomCol" prefWidth="102.0" text="Room" />
+                        <TableColumn fx:id="tablePeriodCol" prefWidth="73.0" text="Period" />
+                        <TableColumn fx:id="tableClassCol" prefWidth="301.0" text="Class" />
                     </columns>
                 </TableView>
             </children>
